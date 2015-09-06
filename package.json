@@ -6,17 +6,15 @@
   "directories": {
     "test": "test"
   },
-  "dependencies": {
-    "gulp": "^3.9.0",
+  "devDependencies": {
     "chai": "^3.2.0",
+    "mocha": "^2.3.0",
+    "gulp": "^3.9.0",
     "gulp-jshint": "^1.11.2",
     "gulp-mocha": "^2.1.3"
   },
-  "devDependencies": {
-    "mocha": "^2.3.0"
-  },
   "scripts": {
-    "test": "mocha"
+    "test": "./node_modules/mocha/bin/mocha test"
   },
   "repository": {
     "type": "git",
@@ -31,5 +29,6 @@
   "bugs": {
     "url": "https://github.com/RyuGuardian/bitmap-transformer-aak/issues"
   },
-  "homepage": "https://github.com/RyuGuardian/bitmap-transformer-aak#readme"
+  "homepage": "https://github.com/RyuGuardian/bitmap-transformer-aak#readme",
+  "bin": "bin/transform"
 }
