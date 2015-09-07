@@ -6,10 +6,8 @@ var fs = require('fs');
 
 describe("#transform", function() {
 	var buf = fs.readFileSync(__dirname + '/../images/palette-bitmap.bmp');
-  var buf2 = fs.readFileSync(__dirname + '/../images/non-palette-bitmap.bmp');
 
-	transform(buf);
-	transform(buf2);
-	
-	it("should write to a new file");
+	it("should return a buffer", function() {
+		expect(Buffer.isBuffer(transform(buf))).to.eql(true);
+	});
 });
