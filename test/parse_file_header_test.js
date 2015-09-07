@@ -1,7 +1,8 @@
 'use strict';
 
 var expect = require('chai').expect;
-var parseFH = require(__dirname + '/../lib/parse_file_header');
+var os = require('os');
+var parseFH = require(__dirname + '/../lib/parse_file_header' + os.endianness());
 var fs = require('fs');
 
 describe('#parseFile', function() {

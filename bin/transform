@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+
+var execute = require(__dirname + '/../index.js');
+
+execute(process.argv[2], process.argv[3]);

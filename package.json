@@ -1,5 +1,5 @@
 {
-  "name": "bitmap-transformer-aak",
+  "name": "transform",
   "version": "0.1.0",
   "description": "Class assignment for transforming bitmaps.",
   "main": "index.js",
@@ -31,5 +31,6 @@
   "bugs": {
     "url": "https://github.com/RyuGuardian/bitmap-transformer-aak/issues"
   },
-  "homepage": "https://github.com/RyuGuardian/bitmap-transformer-aak#readme"
+  "homepage": "https://github.com/RyuGuardian/bitmap-transformer-aak#readme",
+  "bin": "bin/transform"
 }
