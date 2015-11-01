@@ -1,10 +1,12 @@
 {
-  "name": "bitmap-transformer-aak",
+  "name": "transform",
   "version": "0.1.0",
   "description": "Class assignment for transforming bitmaps.",
   "main": "index.js",
   "directories": {
     "test": "test"
+  },
+  "dependencies": {
   },
   "devDependencies": {
     "chai": "^3.2.0",

@@ -15,4 +15,19 @@ gulp.task('test', function() {
 		.pipe(gulpMocha());
 });
 
+gulp.task('parse', function() {
+	return gulp.src('test/parse_file_header_test.js')
+		.pipe(gulpMocha());
+});
+
+gulp.task('trans', function() {
+	return gulp.src('test/transform_test.js')
+		.pipe(gulpMocha());
+});
+
+gulp.task('bmptrans', function() {
+	return gulp.src('test/bitmap_transformer_test.js')
+		.pipe(gulpMocha());
+});
+
 gulp.task('default', ['jshint', 'test']);
